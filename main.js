@@ -6,7 +6,7 @@ canvas.on('click', function(){
 	x_coor = event.pageX
 	y_coor = event.pageY
 
-	display.innerHTML = 'page coordinates: ' + x_coor + ', ' + y_coor
+	display.innerHTML = 'x, y: ' + x_coor + ', ' + (400-y_coor)
 
 	canvas.append('circle')
 		.attr('cx', event.pageX)
